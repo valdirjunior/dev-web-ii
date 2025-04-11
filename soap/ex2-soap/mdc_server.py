@@ -18,7 +18,7 @@ application = Application(
 
 if __name__ == '__main__':
     from wsgiref.simple_server import make_server
-    print("Servidor SOAP rodando em http://localhost:3000/mdc")
+    print("Servidor SOAP rodando em http://localhost:3000/mdc?wsdl")
     wsgi_app = WsgiApplication(application)
     server = make_server('localhost', 3000, wsgi_app)
     server.serve_forever()
