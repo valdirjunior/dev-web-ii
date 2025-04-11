@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polling, Long Polling e WebSocket</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Exemplo de Polling, Long Polling e WebSocket</h1>
+
+    <!-- HTTP Polling -->
+    <section>
+      <h2>HTTP Polling</h2>
+      <div id="polling-messages">Aguardando mensagens...</div>
+      <input type="text" id="polling-input" placeholder="Envie uma mensagem" />
+      <button onclick="sendPollingMessage()">Enviar</button>
+    </section>
+
+    <!-- Long Polling -->
+    <section>
+      <h2>Long Polling</h2>
+      <div id="long-polling-messages">Aguardando mensagens...</div>
+      <input
+        type="text"
+        id="long-polling-input"
+        placeholder="Envie uma mensagem"
+      />
+      <button onclick="sendLongPollingMessage()">Enviar</button>
+    </section>
+
+    <!-- WebSocket -->
+    <section>
+      <h2>WebSocket</h2>
+      <div id="websocket-messages">Aguardando mensagens...</div>
+      <input
+        type="text"
+        id="websocket-input"
+        placeholder="Envie uma mensagem"
+      />
+      <button onclick="sendWebSocketMessage()">Enviar</button>
+      <br /><br />
+      <button onclick="startWebSocket()">Iniciar Conexão</button>
+      <button onclick="stopWebSocket()">Fechar Conexão</button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
